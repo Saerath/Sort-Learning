@@ -9,7 +9,7 @@ public class ArrayBuilder {
 		ArrayList list = new ArrayList();
 		Random rnd = new Random();
 		
-		for (int i = 1; i < arrLength; i++){
+		for (int i = 0; i < arrLength; i++){
 			Integer a = new Integer(rnd.nextInt(maxNumber));
 			list.add(a);
 		}
