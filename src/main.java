@@ -12,12 +12,10 @@ public class main {
 		
 		System.out.printf("Array length = %d,\nMax element of Array = %d\n", ARR_LENGTH, MAX_NUMBER);
 		
-		ArrayBuilder arrBuilder = new ArrayBuilder();
-		Sorter sorter = new Sorter();
+		ArrayBuilder arrBuilder = new ArrayBuilder(); //build Array with ARR_LENGTH and MAX_NUMBER for each index
+		Sorter sorter = new Sorter(); //sorter class with some methods to sort ArrayList<Integer>
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
 		
-//		System.out.println(list);
-//		System.out.println(Sorter.selectSort(list, true));
 		sorter.selectSort(list, WRITE_TIME);
 	
 		
