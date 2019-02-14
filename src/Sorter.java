@@ -2,8 +2,9 @@ import java.util.ArrayList;
 
 
 public class Sorter {
-	public static ArrayList<Integer> selectSort(ArrayList<Integer> list){
+	public ArrayList<Integer> selectSort(ArrayList<Integer> list, boolean writeTime){
 		
+		long time = System.nanoTime()/1000000;
 		
 		Integer temp;
 		
@@ -17,6 +18,7 @@ public class Sorter {
 			}
 		}
 		
+		System.out.printf("Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
 		
 		return list;
 	}
