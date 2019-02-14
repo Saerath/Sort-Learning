@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class ArrayBuilder {
 	
-	public ArrayList newArray(int arrLength, int maxNumber) {
+	public ArrayList<Integer> newArray(int arrLength, int maxNumber) {
 		// TODO Auto-generated constructor stub
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		Random rnd = new Random();
 		
 		for (int i = 0; i < arrLength; i++){
