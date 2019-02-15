@@ -18,11 +18,10 @@ public class main {
 		
 		System.out.println(list);
 		
-		sorter.selectSort(list, WRITE_TIME);
+		sorter.insertSort(list, WRITE_TIME);
 	
 		System.out.println(list);
 	}
-	
 
 	
 
