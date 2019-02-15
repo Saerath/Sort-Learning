@@ -27,7 +27,7 @@ class Sorter {
 		}
 		
 		
-		System.out.printf("Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
+		System.out.printf("SelectSort, Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
 		
 		return list;
 	}
@@ -45,7 +45,7 @@ class Sorter {
 			
 		}
 
-		System.out.printf("Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
+		System.out.printf("InsertSort, Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
 		
 		return list;
 	}
@@ -68,7 +68,7 @@ class Sorter {
 			
 	
 
-		System.out.printf("Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
+		System.out.printf("BubbleSort, Sorting time = %d ms\n", System.nanoTime()/1000000 - time);
 		
 		return list;
 	}
