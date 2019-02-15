@@ -4,8 +4,8 @@ import java.lang.*;
 
 public class main {
 
-	final static int ARR_LENGTH = 200;
-	final static int MAX_NUMBER = 5000;
+	final static int ARR_LENGTH = 20000;
+	final static int MAX_NUMBER = 500000;
 	final static boolean WRITE_TIME = true;
 	
 	public static void main(String[] args) {
