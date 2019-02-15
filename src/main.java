@@ -15,12 +15,14 @@ public class main {
 		ArrayBuilder arrBuilder = new ArrayBuilder(); //build Array with ARR_LENGTH and MAX_NUMBER for each index
 		Sorter sorter = new Sorter(); //sorter class with some methods to sort ArrayList<Integer>
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
+		ArrayList<Integer> listSortedInsert = new ArrayList<Integer>();
+		ArrayList<Integer> listSortedSelect = new ArrayList<Integer>();
 		
-		System.out.println(list);
 		
-		sorter.insertSort(list, WRITE_TIME);
+		listSortedInsert = sorter.insertSort(list, WRITE_TIME);
+		listSortedSelect = sorter.selectSort(list, WRITE_TIME);
 	
-		System.out.println(list);
+		
 	}
 
 	
