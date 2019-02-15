@@ -3,7 +3,7 @@ import java.util.Random;
 
 //Method newArray creates new ArrayList with random Integers
 
-public class ArrayBuilder {
+public class RandomArrayGenerator {
 	
 	public ArrayList<Integer> newArray(int arrLength, int maxNumber) {
 		// TODO Auto-generated constructor stub
