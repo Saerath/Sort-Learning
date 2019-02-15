@@ -13,6 +13,7 @@ public class ArrayBuilder {
 			Integer a = new Integer(rnd.nextInt(maxNumber));
 			list.add(a);
 		}
+		
 		return list;
 	}
 	

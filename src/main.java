@@ -4,7 +4,7 @@ import java.lang.*;
 
 public class main {
 
-	final static int ARR_LENGTH = 20000;
+	final static int ARR_LENGTH = 200;
 	final static int MAX_NUMBER = 5000;
 	final static boolean WRITE_TIME = true;
 	
@@ -16,11 +16,11 @@ public class main {
 		Sorter sorter = new Sorter(); //sorter class with some methods to sort ArrayList<Integer>
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
 		
+		System.out.println(list);
+		
 		sorter.selectSort(list, WRITE_TIME);
 	
-		
-		
-		
+		System.out.println(list);
 	}
 	
 

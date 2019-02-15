@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 
-public class Sorter {
+class Sorter {
 	public ArrayList<Integer> selectSort(ArrayList<Integer> list, boolean writeTime){
 		
 		long time = System.nanoTime()/1000000;
