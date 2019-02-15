@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+//Method newArray creates new ArrayList with random Integers
 
 public class ArrayBuilder {
 	

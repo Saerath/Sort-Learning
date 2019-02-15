@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+//Class includes some sorting methods
 
 class Sorter {
 	public ArrayList<Integer> selectSort(ArrayList<Integer> list, boolean writeTime){
