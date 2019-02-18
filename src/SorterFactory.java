@@ -1,5 +1,5 @@
-
 public class SorterFactory {
+
 	public static Sorter getSorter (String sorterName){
 		
 		if (sorterName.equals("bubble")){
@@ -18,8 +18,7 @@ public class SorterFactory {
 			Sorter sorter = new SelectSorter();
 			return sorter;
 		}else
-			
-		
+
 		return null;
 
 	}

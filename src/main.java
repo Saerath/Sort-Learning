@@ -20,6 +20,7 @@ public class main {
 		sorter.sort(list, WRITE_TIME);
 
 		System.out.println(list);
+		
 	}
 
 	
