@@ -1,23 +1,19 @@
 public class SorterFactory {
 
-	public static Sorter getSorter (String sorterName){
-		
-		if (sorterName.equals("bubble")){
-			Sorter sorter = new BubbleSorter();
-			return sorter;
-			
-		}else if (sorterName.equals("insert")) {
-			Sorter sorter = new InsertSorter();
-			return sorter;
-			
-		}else if (sorterName.equals("shaker")) {
-			Sorter sorter = new ShakerSorter();
-			return sorter;
-			
-		}else if (sorterName.equals("select")) {
-			Sorter sorter = new SelectSorter();
-			return sorter;
-		}else
+	public static Sorter getSorter(SortNames sorterName) {
+
+		switch (sorterName) {
+		case BUBBLE:
+			return new BubbleSorter();
+		case INSERT:
+			return new InsertSorter();
+		case SHAKER:
+			return new ShakerSorter();
+		case SELECT:
+			return new SelectSorter();
+		default:
+			break;
+		}
 
 		return null;
 
