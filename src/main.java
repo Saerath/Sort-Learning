@@ -11,8 +11,9 @@ public class main {
 		System.out.printf("Array length = %d,\nMax element of Array = %d\n",
 				ARR_LENGTH, MAX_NUMBER);
 
-		RandomArrayGenerator arrBuilder = new RandomArrayGenerator(); // build Array with ARR_LENGTH and MAX_NUMBER for each index
-		Sorter sorter = SorterFactory.getSorter(SortNames.BUBBLE);
+		// build Array with ARR_LENGTH and MAX_NUMBER for each index
+		RandomArrayGenerator arrBuilder = new RandomArrayGenerator();
+		Sorter sorter = SortNames.BUBBLE.getSorter();
 
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
 
