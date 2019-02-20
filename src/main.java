@@ -8,8 +8,7 @@ public class main {
 
 	public static void main(String[] args) {
 
-//		System.out.printf("Array length = %d,\nMax element of Array = %d\n",
-//				ARR_LENGTH, MAX_NUMBER);
+		System.out.printf("Array length = %d,\nMax element of Array = %d\n", ARR_LENGTH, MAX_NUMBER);
 
 		// build Array with ARR_LENGTH and MAX_NUMBER for each index
 		RandomArrayGenerator arrBuilder = new RandomArrayGenerator();
@@ -19,13 +18,15 @@ public class main {
 		Sorter sorterShaker = SortNames.SHAKER.getSorter();
 
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
-		ArrayList<Integer> listNew = new ArrayList<Integer>(list);
+		List<Sorter> testList = new ArrayList<Sorter>();
+		testList.add(sorterShaker);
+		testList.add(sorterBubble);
+		testList.add(sorterInsert);
+		testList.add(sorterSelect);
 
-		System.out.println(list);
-		sorterBubble.sort(listNew, WRITE_TIME);
-		sorterInsert.sort(listNew, WRITE_TIME);
-		sorterSelect.sort(listNew, WRITE_TIME);
-		sorterShaker.sort(listNew, WRITE_TIME);
+		for (Sorter s:testList) {
+			s.sort(list, WRITE_TIME);
+		}
 
 	}
 
