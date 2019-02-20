@@ -1,10 +1,13 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class main {
 
-	final static int ARR_LENGTH = 10000;
-	final static int MAX_NUMBER = 50000;
+	final static int ARR_LENGTH = 15;
+	final static int MAX_NUMBER = 99;
 	final static boolean WRITE_TIME = true;
+	
+	static Integer[] arr = {4, 8, 3, 1, 7, 5, 2, 12, 13, 10, 9, 6, 14, 11, 15};
 
 	public static void main(String[] args) {
 
@@ -12,20 +15,19 @@ public class main {
 
 		// build Array with ARR_LENGTH and MAX_NUMBER for each index
 		RandomArrayGenerator arrBuilder = new RandomArrayGenerator();
-		Sorter sorterBubble = SortNames.BUBBLE.getSorter();
-		Sorter sorterInsert = SortNames.INSERT.getSorter();
-		Sorter sorterSelect = SortNames.SELECT.getSorter();
-		Sorter sorterShaker = SortNames.SHAKER.getSorter();
+
+		Sorter sorterPyramid = SortNames.PYRAMID.getSorter();
 
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
 		List<Sorter> testList = new ArrayList<Sorter>();
-		testList.add(sorterShaker);
-		testList.add(sorterBubble);
-		testList.add(sorterInsert);
-		testList.add(sorterSelect);
+		testList.add(sorterPyramid);
+		ArrayList<Integer> arrList = new ArrayList<Integer>(Arrays.asList(arr));
+		
+		
 
 		for (Sorter s:testList) {
-			s.sort(list, WRITE_TIME);
+			System.out.println(list);
+			System.out.println(s.sort(list, WRITE_TIME));
 		}
 
 	}

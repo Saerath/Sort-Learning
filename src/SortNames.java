@@ -1,7 +1,8 @@
 public enum SortNames {
 	BUBBLE(new BubbleSorter()), 
 	INSERT(new InsertSorter()), 
-	SELECT(new SelectSorter()), 
+	SELECT(new SelectSorter()),
+	PYRAMID(new PyramidSorter()),
 	SHAKER(new ShakerSorter());
 
 	private Sorter sorter;
