@@ -4,9 +4,8 @@ import java.util.List;
 public class SelectSorter implements Sorter {
 
 	public List<Integer> sort(List<Integer> list, boolean writeTime) {
+		List<Integer> listNew = new ArrayList<Integer>(list);
 		long time = System.nanoTime() / 1000000;
-		List<Integer> listNew = new ArrayList<Integer>();
-		listNew = list;
 
 		Integer min;
 		int minInd;
