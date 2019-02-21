@@ -17,10 +17,12 @@ public class main {
 		RandomArrayGenerator arrBuilder = new RandomArrayGenerator();
 
 		Sorter sorterPyramid = SortNames.PYRAMID.getSorter();
+		Sorter sorterQuick = SortNames.QUICK.getSorter();
 
 		ArrayList<Integer> list = arrBuilder.newArray(ARR_LENGTH, MAX_NUMBER);
 		List<Sorter> testList = new ArrayList<Sorter>();
 		testList.add(sorterPyramid);
+		testList.add(sorterQuick);
 		ArrayList<Integer> arrList = new ArrayList<Integer>(Arrays.asList(arr));
 		
 		

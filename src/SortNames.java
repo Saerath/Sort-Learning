@@ -3,6 +3,7 @@ public enum SortNames {
 	INSERT(new InsertSorter()), 
 	SELECT(new SelectSorter()),
 	PYRAMID(new PyramidSorter()),
+	QUICK(new QuickSorter()),
 	SHAKER(new ShakerSorter());
 
 	private Sorter sorter;
